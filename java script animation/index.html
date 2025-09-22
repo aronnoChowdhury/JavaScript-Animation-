@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Animation</title>
+  <link rel="stylesheet" href="style.css">
+<html>
+<body>
+
+<h1>JavaScript Animation Light On and Off</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<p>
+  <b>💡 Light On/Off Animation (Concept)</b> <br>
+
+This is a small animation effect where you simulate a light bulb turning on and off using JavaScript, HTML, and CSS. <br>
+
+HTML: You create a light bulb (usually an image or a circle/div). <br>
+
+CSS: You define two states: <br>
+
+Light OFF → dark/grey background, dim bulb. <br>
+
+Light ON → bright yellow glow, illuminated bulb. <br>
+
+JavaScript: Adds interactivity by toggling between ON and OFF when a button is clicked.
+</p>
+<br>
+<br>
+<p>
+ <b>✨ Example Behavior</b>  <br>
+
+Initially, the bulb is OFF (dark). <br>
+
+When you click the button → the bulb glows yellow with a shadow. <br>
+
+Click again → bulb goes OFF (no glow). <br>
+
+This toggle repeats. <br>
+</p>
+</body>
+</html>
