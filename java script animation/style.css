@@ -9,6 +9,11 @@ h1,p{
     color: yellow;
 }
 
+h2{
+    color: yellow;
+    text-shadow: 1px 4px 5px yellow;
+}
+
 button{
     padding: 8px 15px;
     margin: 0px 10px;
@@ -18,9 +23,9 @@ button{
 
 button:hover{
     background: yellow;
-    font-size: 15px;
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 1px 2px 5px 5px yellow;
 }
+
 
